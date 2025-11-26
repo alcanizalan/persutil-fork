@@ -1,5 +1,10 @@
 package net.ausiasmarch.persutil.entity;
 
+import java.time.LocalDateTime;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import jakarta.annotation.Nullable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -26,6 +31,24 @@ public class AlcanyizEntity{
     @NotNull
     @Size(min = 3, max = 1024)
     private String question;
-    
-    
+    @NotNull
+    @Size(min = 3, max = 1024)
+    private String answer1;
+    @NotNull
+    @Size(min = 3, max = 1024)
+    private String answer2;
+    @NotNull
+    @Size(min = 3, max = 1024)
+    private String answer3;
+    @NotNull
+    @Size(min = 3, max = 1024)
+    private String answer4;
+    @NotNull
+    private long correct;
+    @NotNull
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", shape = JsonFormat.Shape.STRING)
+    private LocalDateTime create_date;
+    @Nullable
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", shape = JsonFormat.Shape.STRING)
+    private LocalDateTime modify_date;
 }

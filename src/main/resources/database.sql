@@ -50,3 +50,8 @@ ALTER TABLE `blog`
 ALTER TABLE `blog`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
 COMMIT;
+
+
+-- ----------- ALAN ---------------------------------
+
+INSERT INTO `jspreguntas` (`id`, `question`, `answer1`, `answer2`, `answer3`, `answer4`, `correct`, `create_date`, `modify_date`) VALUES (NULL, '¿Cuál es el principal beneficio de la programación asíncrona en un entorno de hilo único (single-threaded), como JavaScript en un navegador?', 'Garantiza que todas las funciones se completen siempre en el orden exacto en que fueron llamadas.', 'Simplifica la sintaxis del código de manejo de errores en operaciones I/O.', 'Evita el bloqueo del hilo principal, permitiendo que la interfaz de usuario siga respondiendo mientras se esperan operaciones lentas.', 'Permite que el código se ejecute en paralelo utilizando múltiples núcleos del procesador.', '3', '2025-11-24 20:01:09.000000', NULL);
